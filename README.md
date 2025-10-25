@@ -24,9 +24,10 @@ All datasets are stored in the `data/` folder:
 | `crop_clean.csv` | Crop production data by State, District, Year, and Crop |
 | `rain_clean.csv` | Annual rainfall data by State and Year |
 
-
-Open in browser: http://localhost:8501
-Try sample questions:
+How to Run
+Run:
+streamlit run app.py
+A browser will open. You can type questions like:
 "Compare rainfall and top crop"
 "Which district has highest and lowest production"
 "Analyze production trend"
