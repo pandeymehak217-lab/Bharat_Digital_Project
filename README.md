@@ -24,21 +24,7 @@ All datasets are stored in the `data/` folder:
 | `crop_clean.csv` | Crop production data by State, District, Year, and Crop |
 | `rain_clean.csv` | Annual rainfall data by State and Year |
 
-> These datasets were cleaned and simplified for the prototype demo.
 
----
-
-
----
-
-## 🚀 How to Run
-
-1. **Clone the repository**:
-
-```bash
-git clone https://github.com/YOUR_USERNAME/Bharat_Digital_Project.git
-cd Bharat_Digital_Projec pip install streamlit pandas
-t
 Open in browser: http://localhost:8501
 Try sample questions:
 "Compare rainfall and top crop"
