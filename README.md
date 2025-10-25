@@ -25,10 +25,10 @@ All datasets are stored in the `data/` folder:
 | `rain_clean.csv` | Annual rainfall data by State and Year |
 
 How to Run
-Run:
 streamlit run app.py
 
-A browser will open. You can type questions like:
+A browser will open. 
+You can type questions like:
 "Compare rainfall and top crop"
 "Which district has highest and lowest production"
 "Analyze production trend"
