@@ -27,6 +27,7 @@ All datasets are stored in the `data/` folder:
 How to Run
 Run:
 streamlit run app.py
+
 A browser will open. You can type questions like:
 "Compare rainfall and top crop"
 "Which district has highest and lowest production"
