@@ -24,7 +24,7 @@ All datasets are stored in the `data/` folder:
 | `crop_clean.csv` | Crop production data by State, District, Year, and Crop |
 | `rain_clean.csv` | Annual rainfall data by State and Year |
 
-How to Run
+How to Run:
 streamlit run app.py
 
 A browser will open. 
