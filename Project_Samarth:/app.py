@@ -2,12 +2,8 @@ import pandas as pd
 import os
 import streamlit as st
 
-# ------------------------------
-# Step 1: Create data folder & CSVs
-# ------------------------------
 os.makedirs("data", exist_ok=True)
 
-# Crop data
 crop_data = {
     "State": ["Maharashtra","Maharashtra","Gujarat","Gujarat",
               "Maharashtra","Maharashtra","Gujarat","Gujarat"],
@@ -20,7 +16,7 @@ crop_data = {
 crop_df = pd.DataFrame(crop_data)
 crop_df.to_csv("data/crop_clean.csv", index=False)
 
-# Rainfall data
+
 rain_data = {
     "State": ["Maharashtra","Maharashtra","Maharashtra","Gujarat","Gujarat","Gujarat"],
     "Year": [2022,2021,2020,2022,2021,2020],
@@ -29,15 +25,9 @@ rain_data = {
 rain_df = pd.DataFrame(rain_data)
 rain_df.to_csv("data/rain_clean.csv", index=False)
 
-# ------------------------------
-# Step 2: Load datasets
-# ------------------------------
+
 crop_df = pd.read_csv("data/crop_clean.csv")
 rain_df = pd.read_csv("data/rain_clean.csv")
-
-# ------------------------------
-# Step 3: Functions for Q&A
-# ------------------------------
 
 def rainfall_and_top_crops(state_x, state_y, crop_type, years=2, top_m=2):
     rain_x = rain_df[rain_df['State'] == state_x].tail(years)
@@ -103,9 +93,7 @@ def policy_arguments(region, crop_a, crop_b, years=2):
     
     return f"Arguments for promoting {crop_a} over {crop_b} in {region}:\n1. {arg1}\n2. {arg2}\n3. {arg3}\n(Source: Agriculture + IMD datasets)"
 
-# ------------------------------
-# Step 4: Streamlit Interface
-# ------------------------------
+
 st.title("Project Samarth - Agriculture & Climate Q&A")
 
 question = st.text_input("Ask your question:")
