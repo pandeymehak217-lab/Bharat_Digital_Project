@@ -95,9 +95,7 @@ def policy_arguments(region, crop_a, crop_b, years=2):
 
 
 st.title("Project Samarth - Agriculture & Climate Q&A")
-
 question = st.text_input("Ask your question:")
-
 if st.button("Get Answer"):
     q = question.lower()
     if "rainfall" in q and "top crop" in q:
